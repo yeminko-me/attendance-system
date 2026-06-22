@@ -26,8 +26,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public boolean register(String username, String password, String fullName, String role) {
-        return dao.register(username, password, fullName, role);
+    public boolean register(String username, String password, String fullName, String role, String address, String phone) {
+        return dao.register(username, password, fullName, role, address, phone);
     }
 
     @Override
@@ -41,12 +41,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public boolean registerAdmin(String username, String password, String fullName) {
-        return register(username, password, fullName, "admin");
+    public boolean registerAdmin(String username, String password, String fullName, String address, String phone) {
+        return register(username, password, fullName, "admin", address, phone);
     }
 
     @Override
-    public boolean registerUser(String username, String password, String fullName) {
-        return register(username, password, fullName, "user");
+    public boolean registerUser(String username, String password, String fullName, String address, String phone) {
+        return register(username, password, fullName, "user", address, phone);
     }
 }

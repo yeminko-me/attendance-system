@@ -8,6 +8,8 @@ CREATE TABLE IF NOT EXISTS employee (
     full_name VARCHAR(100) NOT NULL,
     role VARCHAR(10) DEFAULT 'user',
     hourly_rate DECIMAL(10,2) DEFAULT 1000.00,
+    address VARCHAR(255) DEFAULT '',
+    phone VARCHAR(20) DEFAULT '',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
