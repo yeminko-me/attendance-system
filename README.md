@@ -2,6 +2,12 @@
 
 A Java SE desktop application with Swing GUI, Spring Boot REST API, and MySQL database for employee attendance tracking.
 
+## Screenshots
+
+| Login Screen | Main Dashboard |
+|---|---|
+| ![Login](screenshots/home.png) | ![Dashboard](screenshots/userhomepage.png) |
+
 ## Features
 
 - **Check In / Check Out** — Record daily attendance with timestamps
